@@ -1,7 +1,8 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  target: 'static',
   head: {
-    title: 'nuxt-arfit',
+    title: 'Arfit',
     htmlAttrs: {
       lang: 'en',
     },
@@ -33,5 +34,9 @@ export default {
   modules: ['bootstrap-vue/nuxt'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    babel: {
+      compact: true,
+    },
+  },
 }
